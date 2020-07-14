@@ -1,27 +1,64 @@
+// TEST for console 
+// console.log("Hello, World!");
+
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
+var votingAge = 18;
 
+if (votingAge >= 18) {
+    console.log("You are old enough to vote!");
+}
 
-
+else {
+    console.log("You are not old enough to vote!");
+  }
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+    var month = "May";
 
+    if(month === "May"){
+        var month = "Summer time"
+    }
+    else{
+        var month = "Off season"
+    }
+
+    console.log(month);
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
+var x = "1999"
 
+Number(x);
+
+console.log(x);
+
+// OR
+
+// var x = "1999"
+
+// parseInt(x);
+
+// console.log(x);
 
 
 
 //Task d: Write a function to multiply a*b 
 
+function multiply(num1, num2){
 
+return num1 * num2;
 
+}
 
+let num1 = '2'
+let num2 = '5'
+
+console.log(multiply(num1, num2));
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
@@ -94,6 +131,31 @@
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
+
+function finalGrade(total){
+    
+    if(total >= 90 && total <= 100){
+        console.log("A");
+    }
+
+    if(total >= 80 && total <= 89){
+        console.log("B");
+    }
+    
+    if(total >= 70 && total <= 79){
+        console.log("C");
+    }
+
+    if(total >= 60 && total <= 69){
+        console.log("D");
+    }
+
+    if(total <= 59){
+        console.log("F");
+    }
+
+}
+console.log(finalGrade(62));
   
 
   
